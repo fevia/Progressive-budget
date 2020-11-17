@@ -10,19 +10,22 @@ const app = express();
 app.use(logger("dev"));
 
 app.use(compression());
-app.use(express.urlencoded({ extended: true }));
+app.use(express.urlencoded({
+  extended: true
+}));
 app.use(express.json());
 
 app.use(express.static("public"));
 
 mongoose.connect(
-  process.env.MONGODB_URI || 'mongodb://localhost/budget',
+  process.env.MONGODB_URI || 'mongodb://localhost/budget', 
   {
-  useNewUrlParser: true,
-  newUnifiedTopology: true,
-  UseCreateIndex: true,
-  useFindAndModify: false
-});
+    useNewUrlParser: true,
+    newUnifiedTopology: true,
+    useCreateIndex: true,
+    useFindAndModify: false
+  }
+);
 
 // routes
 app.use(require("./routes/api.js"));
