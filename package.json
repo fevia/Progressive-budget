@@ -1,7 +1,7 @@
 {
-  "name": "progressive-budget",
+  "name": "budget-app",
   "version": "1.0.0",
-  "description": "track your budget",
+  "description": "",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -12,12 +12,12 @@
     "type": "git",
     "url": "git+https://github.com/fevia/Progressive-budget.git"
   },
-  "author": "Flory Ann Evia",
+  "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/fevia/Progressive-budget/issues"
+    "url": "https://github.com/coding-boot-camp/unit18hw/issues"
   },
-  "homepage": "https://github.com/fevia/Progressive-budget#readme",
+  "homepage": "https://github.com/coding-boot-camp/unit18hw#readme",
   "dependencies": {
     "compression": "^1.7.4",
     "express": "^4.17.1",
